@@ -271,6 +271,7 @@ a{
     display: flex;
     justify-content: center;
     margin: 10px;
+    
 }
 .contenedor-partner-img img{
     width: 100%;
@@ -678,4 +679,19 @@ a{
    
    
 }
+
+/* ESTILOS DE CARD DE LOS PROYECTOS LANAZADOS */
+.card_app a{
+    color: black;
+}
+.card_app{
+    margin-bottom: 10px;
+    background-color: rgb(156, 148, 148);
+    
+} 
+.card_app:hover{
+    box-shadow: 2px 2px 20px grey;
+   
+}
+
 /***** FIN DEL FOOTER*************/
