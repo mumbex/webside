@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
 html {
     scroll-behavior: smooth;
 }
@@ -680,18 +682,104 @@ a{
    
 }
 
-/* ESTILOS DE CARD DE LOS PROYECTOS LANAZADOS */
-.card_app a{
-    color: black;
+/* ESTILOS DE CARD DE LOS productos  LANAZADOS */
+.contenedor_card{
+    display: inline;
 }
-.card_app{
-    margin-bottom: 10px;
-    background-color: rgb(156, 148, 148);
-    
-} 
-.card_app:hover{
-    box-shadow: 2px 2px 20px grey;
+
+.container-card{
+	width: 100%;
+	display: flex;
+	/* height: 40%; */
+	margin: auto;
+    justify-content: center;
    
 }
+.title-cards{
+	width: 100%;
+	max-width: 1080px;
+	margin: auto;
+	padding: 20px;
+	margin-top: 20px;
+	text-align: center;
+	color: #7a7a7a;
+}
+.card{
+	width: 15%;
+	margin: 10px;
+    height: auto;
+	border-radius: 6px;
+	overflow: hidden;
+	/* background:#fff; */
+	box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+	transition: all 400ms ease-out;
+	cursor: default;
+    display: flex;
+    background-color: yellow;
+
+}
+.card:hover{
+	box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+	transform: translateY(-3%);
+}
+
+.contenedor-imagen{
+
+    display:flex ;
+    justify-content: center;
+    /* background-color: aqua; */
+}
+.card img{
+	width: 100%;
+	height:120px;
+}
+.card .contenido-card{
+	padding: 5px;
+	text-align: center;
+    /* background-color: rgb(27, 15, 15); */
+}
+
+.card .contenido-card p{
+	/* line-height: 1.8; */
+	color: #302f2f;
+	font-size: 16px;
+	margin-bottom: 5px;
+}
+.card .contenido-card a{
+	display: inline-block;
+	padding: 10px;
+	margin-top: 10px;
+	text-decoration: none;
+	color: #2fb4cc;
+	border: 1px solid #2fb4cc;
+	border-radius: 4px;
+	transition: all 400ms ease;
+	margin-bottom: 5px;
+}
+.card .contenido-card a:hover{
+	background: #2fb4cc;
+	color: #fff;
+}
+@media only screen and (min-width:320px) and (max-width:768px){
+	.container-card{
+		/* flex-wrap: wrap; */
+        display: block;
+        justify-content: center;
+	}
+	.card{
+        justify-content: center;
+        width: 50%;
+        height: auto;
+		margin: 10px 50px;
+        margin-left: auto;
+        margin-right: auto;
+        border: 1px black solid;
+
+        
+	}
+}
+/*---------Fin-Cards productos lanzados------------*/
+
+
 
 /***** FIN DEL FOOTER*************/
