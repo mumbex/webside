@@ -763,18 +763,17 @@ a{
 @media only screen and (min-width:320px) and (max-width:768px){
 	.container-card{
 		/* flex-wrap: wrap; */
-        display: block;
+        display: flex;
         justify-content: center;
 	}
 	.card{
         justify-content: center;
-        width: 50%;
+        width: 40%;
         height: auto;
 		margin: 10px 50px;
         margin-left: auto;
         margin-right: auto;
-        border: 1px black solid;
-
+       
         
 	}
 }
